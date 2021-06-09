@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Products|Tech point</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/tp.png" width="125px" height="80">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="shop.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+            
+            <img src="img/outline_menu_black_24dp.png" class="menu-icon" onclick="menutoggle()" >
+            
+        </div>
+    </div>
+    </div>
+    
+  
+<!--order-->
+<div class="con-col">
+    <h2>Place your order here</h2>
+    <form action="form.php" method="POST">
+        <input type="text" name='name' placeholder="Enter your name" required>
+        <input type="email" name='email' placeholder="Enter email address" required>
+        <input type="text" name='model' placeholder="Enter gadget type " required>
+        <textarea rows="10" name='message' placeholder=" Model and quantity of the product" required></textarea>
+        <button class="btn">Place Order</button>
+    </form>
+</div>
+
+
+
+
+<!--fotter-->
+<div class="footer">
+    <div class="holder">
+        <div class="row">
+            <div class="fot-1">
+                <h3>Download Our App</h3>
+                <p>Download for IOS and Android</p>
+                <div class="app-logo">
+                    <img src="img/app-store.png" >
+                    <img src="img/google-play.png">
+                </div>
+            </div>
+            <div class="fot-2">
+                <img src="img/tp.png" width="100">
+                <p>Our Goal is to provied our customers with quality product at an affordable price.</p>
+            </div>
+            <div class="fot-4">
+                <h3>Contract us</h3>
+                <p>Phone: 0123456789</p>
+                <p>Email: abc@gmail.com</p>  
+            </div>
+            <div class="fot-3">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instragram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--JS for toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = '0px';
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == '0px')
+            {
+                MenuItems.style.maxHeight = '200px';
+            }
+        else
+            {
+                MenuItems.style.maxHeight = '0px';
+            }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px ;
+}
+a{
+    text-decoration: none;
+    color:black ;
+}
+p{
+    color: black;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.co-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.co-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.co-2 h1{
+font-size: 50px;
+line-height: 60px;
+margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius:30 px ;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: skyblue;
+}
+.header{
+    background: radial-gradient(#fff,skyblue);
+}
+.header .row{
+    margin-top: 60px;
+}
+.catagory{
+    margin: 70px 0;
+}
+.co-3{
+    flex-basis: 20%;
+    min-width: 250px;
+    margin-bottom: 50px;
+    
+    
+
+}
+.co-3 img{
+    width: 100%;
+}
+.sm_con{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.co-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.co-4 img{
+    width: 60%;
+
+}
+.title{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: blueviolet;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.co-4:hover{
+    transform: translateY(-5px);
+}
+.offer {
+    background: radial-gradient(#fff,skyblue);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+<!--testimonial-->
+.test{
+    padding-top:100px ;
+}
+.test .co-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.1) ;
+    cursor: pointer;
+
+}
+.test .co-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.test .co-3:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+
+}
+.brand .co-4 img{
+    padding-left: 80px;
+}
+/*-----footer----*/
+.footer{
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 80px 0 30px ;
+    
+}
+.footer p{
+    color: floralwhite;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.fot-1,.fot-2,.fot-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.fot-1{
+    flex-basis: 20%;
+
+}
+.fot-1 h3{
+    padding-left: 10px;
+}
+.fot-1 p{
+    padding-left: 10px;
+}
+.fot-1 .app-logo img{
+    width: 150px;
+}
+.fot-2{
+    flex: 1;
+    text-align: center;
+}
+.fot-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.fot-3{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.menu-icon{
+    width:28px ;
+    margin-left:20px ;
+    display: none;
+}
+/*--media query for menu--*/
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+     }
+     nav ul li{
+         display: block;
+         margin-right: 50px;
+         margin-bottom: 10px;
+         margin-top: 10px;
+     }
+     nav ul li a{
+         color: #fff;
+     }
+     .menu-icon{
+         display: block;
+         cursor: pointer;
+     }
+}
+/*---------all products--------*/
+.row-2{
+    justify-content:space-around;
+    margin: 100px 0 50px;
+}
+.con-col input, .con-col textarea{
+    width: 60%;
+    padding: 30px;
+    margin-top: 17px;
+    margin-left: 20%;
+    margin-bottom: 17px;
+    outline:black;
+    border: 3px solid red;
+   
+}
+.con-col h2{
+    margin: auto;
+    margin-top: 5%;
+    margin-left:45% ;
+    color:#555 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--media query for less than 600 screen size--*/
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .c0-2,.co-3,.co-4{
+        flex-basis: 100%;
+    }
+}
